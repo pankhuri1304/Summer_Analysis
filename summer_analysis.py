@@ -27,7 +27,8 @@ df2 = pd.read_csv('Athlete_S2.csv')
 region = pd.read_csv('regions.csv')
 
 df = preprocessor_s.preprocess(df1, df2, region)
-
+app = Dash(__name__)
+server = app.server
 st.markdown("""
         <style>
                .block-container {
