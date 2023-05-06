@@ -28,7 +28,7 @@ region = pd.read_csv('regions.csv')
 
 df = preprocessor_s.preprocess(df1, df2, region)
 
-server = app.server
+server = summer_analysis.server
 st.markdown("""
         <style>
                .block-container {
